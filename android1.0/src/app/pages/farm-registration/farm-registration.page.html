@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Farm Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="registerFarm()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Farm Name</ion-label>
+        <ion-input [(ngModel)]="farm.name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Location</ion-label>
+        <ion-input [(ngModel)]="farm.location" name="location"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Size (acres)</ion-label>
+        <ion-input type="number" [(ngModel)]="farm.size" name="size"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Crop Type</ion-label>
+        <ion-input [(ngModel)]="farm.crop_type" name="crop_type"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" type="submit">Register Farm</ion-button>
+  </form>
+</ion-content>

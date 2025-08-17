@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path: 'header',
     component:HeaderComponent
+  },
+  {
+    path: 'farm-registration',
+    loadChildren: () => import('./pages/farm-registration/farm-registration.module').then( m => m.FarmRegistrationPageModule)
   }
 ];
 

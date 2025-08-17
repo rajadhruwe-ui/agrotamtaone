@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'core',
     'rest_framework',
     'corsheaders',
-    # 'rest_framework_simplejwt',
+    'farm', # Your farm app
+    'rest_framework_simplejwt',
 ]
 
 # for auth
@@ -141,3 +142,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8100",  # Your Angular app
 ]
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}

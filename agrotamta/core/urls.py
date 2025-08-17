@@ -1,8 +1,20 @@
-from django.urls import path
+from django.urls import include, path
 from django.http import HttpResponse
 from .conn import check_db_connection
 from .views import *
 from . import views
+from django.urls import path
+from rest_framework_simplejwt.views import ( # pyright: ignore[reportMissingImports]
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
+urlpatterns = [
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    # your farm urls
+    path('api/', include('farm.urls')),
+]
 
 # simple home view
 def home(request):
