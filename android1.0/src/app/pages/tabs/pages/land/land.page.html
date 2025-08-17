@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar
+      [(ngModel)]="searchText"
+      placeholder="Search by nickname or location"
+      debounce="300"
+      (ionInput)="filterLands()">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="4" size-lg="3" *ngFor="let land of filteredLands">
+        <ion-card class="land-card">
+          <ion-card-header class="ion-text-center">
+            <ion-card-title class="land-title">{{ land.nickname }}</ion-card-title>
+            <ion-card-subtitle class="land-location">📍 {{ land.location }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="land-akad">📏 Area: {{ land.akad }}</p>
+            <p class="land-details">📝 {{ land.details }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

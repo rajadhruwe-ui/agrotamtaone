@@ -1,0 +1,22 @@
+.land-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+  
+    .land-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2b7a78;
+    }
+  
+    .land-location {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  
+    .land-akad, .land-details {
+      font-size: 0.9rem;
+      color: #444;
+    }
+  }
+  

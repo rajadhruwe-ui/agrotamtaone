@@ -1,0 +1,123 @@
+<ion-content [fullscreen]="true" color="warning">
+  <ion-app>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="warning">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+
+        <!-- list of menu -->
+        <ion-accordion-group expand="inset" class="first">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label>फार्म की जानकारी </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <a [routerLink]="['/tabs/registration']">खेत जोडे</a>
+            </div>
+            <div class="ion-padding" slot="content">
+              <a [routerLink]="['/billhistory']">
+                खेत संशोधन
+              </a>
+            </div>
+          </ion-accordion>
+          <!--  -->
+
+
+          <ion-item button [routerLink]="['/pandingbill']">
+            <ion-label>खेत के देख रेख</ion-label>
+          </ion-item>
+
+          <ion-item button [routerLink]="['/pandingbill']">
+            <ion-label>संपर्क करे</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['/pandingbill']">
+            <ion-label>गोपनीयता नीति</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['/pandingbill']">
+            <ion-label>नियम और शर्तें</ion-label>
+          </ion-item>
+
+        </ion-accordion-group>
+        <!-- end list of menu -->
+
+
+      </ion-content>
+    </ion-menu>
+
+
+
+    <div class="ion-page" id="main-content">
+      <ion-toolbar class="ion-text-uppercase">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+        <ion-icon id="present-alert" name="notifications-circle" slot="end" size="large"
+          [routerLink]="['/notification']"></ion-icon>
+        <ion-alert trigger="present-alert" header="notification" subHeader="No any notification" message="no any msg"
+          [buttons]="alertButtons"></ion-alert>
+      </ion-toolbar>
+
+      <ion-content class="ion-padding">
+        <!-- grid -->
+
+        <ion-grid class="body">
+          <ion-row>
+            <ion-col>1
+              <ion-col size="12" size-sm="3">
+                <ion-card>
+                  <img alt="Silhouette of mountains" src="assets/checkbill.jpg" sizes="small" />
+                  <ion-card-header>
+                    <ion-card-title>Tomato</ion-card-title>
+                    <ion-card-subtitle>Agrotamta</ion-card-subtitle>
+                  </ion-card-header>
+
+                  <ion-card-content>
+                    Here's a small text description for the card content. Nothing more, nothing less.
+                  </ion-card-content>
+                  <ion-button fill="clear" class="headcard1" [routerLink]="['/billcalculation']">
+                    खेत जोडे
+                  </ion-button>
+                  <ion-button fill="clear" class="headcard1" [routerLink]="['/billgeneration']">
+                    खेत संशोधन
+                  </ion-button>
+                  <ion-button fill="clear" class="headcard1" [routerLink]="['/billgeneration']">
+                    अधिक जानकारी
+                  </ion-button>
+                </ion-card>
+              </ion-col>
+            </ion-col>
+            <!-- 2 -->
+  
+            <!-- 3 -->
+            <!-- <ion-col size="12" size-sm="3">3
+          <ion-card>
+            <img alt="Silhouette of mountains" src="assets/studentlist.jpg" />
+            <ion-card-header>
+              <ion-card-title>Student Details</ion-card-title>
+              <ion-card-subtitle>student</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+
+            <ion-button size="small" color="light" [routerLink]="['/addstudent']">
+              <ion-icon mode="md" size="large"  name="add-circle-outline" ></ion-icon>
+            </ion-button>
+            <ion-button fill="clear"  class="button1" [routerLink]="['/studentlist']">Student List</ion-button>
+          </ion-card>
+        </ion-col> -->
+          </ion-row>
+        </ion-grid>
+
+
+
+      </ion-content>
+      <!--  -->
+    </div>
+  </ion-app>
+</ion-content>

@@ -1,0 +1,125 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  
+    height: 200px;
+    width: 300px;
+  
+    margin: 0 auto;
+  }
+  
+  b {
+    width: 100%;
+  }
+  
+  .ripple-parent {
+    position: relative;
+    overflow: hidden;
+  
+    border: 1px solid #ddd;
+  }
+  
+  .rectangle {
+    width: 300px;
+    height: 150px;
+  }
+  
+  .rounded-rectangle {
+    width: 185px;
+    height: 65px;
+    border-radius: 8px;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  .form{
+    margin: 50px;
+    display:flex;
+    width: 150px;
+    height: 200px;
+  }
+
+
+  .button {
+    // display: block;
+    // margin: 10px auto;
+    // padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button1 {
+    // display: block;
+    // margin: 10px auto;
+    // padding: 10px 20px;
+    background-color: #F7BF12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .first a{
+    text-decoration: none;
+  }
+  .second a{
+    text-decoration: none;
+  }
+  .third a{
+    text-decoration: none;
+  }
+  .log{
+    background-color: red;
+  }
+ion-card{
+  margin: 5px;
+  padding: 3px;
+  border-radius: 13px 13px 3px 3px ;
+  box-shadow:5px 10px 30px 10px rgb(204, 204, 204);
+}
+
+  .headcard{
+    border-radius: 13px 13px 3px 3px;
+    // border: 2px black solid;
+    background-color: #FEB25B;
+  }
+  .headcard1{
+    border-radius: 13px 13px 3px 3px ;
+    // border: 2px black solid;
+    background-color: #615BFE;
+  }
+  .headcard2{
+    border-radius: 13px 13px 3px 3px ;
+    // border: 2px black solid;
+    background-color: #ffffff;
+  }
+  .headtittle{
+    color:#fff;
+    // font-size: 30px;
+    
+  }
+
+  ion-title{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ion-col {
+    background-color: #FFFFDB;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+  }
+
+
+ .body{
+  margin-bottom: 25px;
+ }

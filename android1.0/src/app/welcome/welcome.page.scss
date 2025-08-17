@@ -1,0 +1,114 @@
+ion-content{
+    --ion-background-color: #ffffff;
+    }
+    ion-header{
+        --position: absolute;
+        --opacity: 0;
+        // --ion-background-color: transparent;
+    }
+    ion-title{
+        --text-align: center;
+        font-size: 40px;
+    }
+
+    .welcomelogo{
+        color: rgb(5, 115, 211);
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .next{
+        margin-top: 400px; 
+        text-align: center;
+        
+    }
+    ion-card-title{
+        color: white;
+    } 
+
+    ion-card{
+        --ion-background-color: transparent;
+        --opacity: 0;
+        box-shadow: none;
+        margin-top: 150px;
+    }
+    ion-avatar:hover{
+        background-color: transparent;
+
+    }
+ 
+    button{
+        height: 50px;
+        width: 94vw;
+        font-size: 26px;
+        background-color: #fbc531;
+        border-radius: 20px;
+    }
+
+
+   
+
+    .profile-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+        margin-bottom: 124px;
+      }
+      
+      .profile-card {
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .avatar-center {
+        margin: 0 auto;
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      
+      .mt-2 {
+        margin-top: 12px;
+      }
+      
+
+
+
+    //   header
+    .toolbar-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      
+      .logo-img {
+        height: 40px;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+      
+      .logo-text {
+        white-space: nowrap;
+      }
+      
+      @media (max-width: 576px) {
+        .toolbar-title {
+          font-size: 1rem;
+          gap: 6px;
+        }
+      
+        .logo-img {
+            padding: 3px;
+          height: 30px;
+        }
+      }
+      

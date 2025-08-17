@@ -1,0 +1,34 @@
+  <!--  <ion-button expand="block" (click)="setOpen1(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="medium">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="light">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="warning">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="danger">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="light">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="medium">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="warning">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="dark">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="danger">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="light">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="dark">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="medium">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="light">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="dark">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="success">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="warning">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="medium">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="danger">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="warning">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="light">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen(true)" color="warning">Open</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="secondary">Open</ion-button> -->
+
+    <!--  -->

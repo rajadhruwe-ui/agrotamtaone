@@ -1,0 +1,45 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large" class="tittle">login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary" class="ion-padding bg-white">
+
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+
+        <ion-card class="p-3 shadow">
+          <ion-card-header>
+            <ion-title class="text-center">Login</ion-title>
+          </ion-card-header>
+
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input formControlName="email"></ion-input>
+                </ion-item>
+          
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input type="password" formControlName="password"></ion-input>
+                </ion-item>
+          
+                <ion-button expand="block" color="primary" type="submit">
+                  Login
+                </ion-button>
+              </ion-list>
+            </ion-card-content>
+          </form>
+          
+        </ion-card>
+
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+

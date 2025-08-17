@@ -1,0 +1,203 @@
+<!-- <nav class="sticky-top"> -->
+  <div class="navbar-top w-100 p-1" *ngIf="isHomeMenu">
+    <div class="top-content container-fluid">
+      <div class="top-text">
+        <span class=" text-muted ">छत्तीसगढ़ सरकार</span> | <span class="text-muted">GOVERNMENT OF CHHATTISGARH</span>
+      </div>
+      <!-- Right Section: Icons and Language Selector -->
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <span class="skip-link d-none d-md-block"><a href="#main-content" class="">SKIP TO MAIN CONTENT</a></span>
+        <button class="btn btn-outline-secondary custom-btn" title="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="btn btn-outline-secondary custom-btn" title="Text Size">
+          <i class="fa-solid fa-font"></i>
+        </button>
+        <button class="btn btn-outline-secondary custom-btn" title="Social Media">
+          <i class="fa-solid fa-globe"></i>
+        </button>
+        <button class="btn btn-outline-secondary custom-btn" title="Site Map">
+          <i class="fa-solid fa-chart-diagram"></i>
+        </button>
+        <i class="bi bi-translate"></i>
+       <!--  <select class="form-select form-select-sm" style="width: auto;">
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select> -->
+        <!-- *new code -->
+        <div class="dropdown">
+          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">हिन्दी</a></li>
+          </ul>
+        </div>
+  
+        <div class="dropdown">
+          <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://mguvv.ac.in/Website/LoginMIS.aspx" target="_blank" >Faculty Login</a></li>
+            <li><a class="dropdown-item" href="https://mguvv.ac.in/Website/StudentLogin.aspx" target="_blank" >Student Login</a></li>
+            <li><a class="dropdown-item" href="http://localhost:4300/login" target="_blank" >Portal Login</a></li>
+          </ul>
+        </div>
+        <!-- *new code -->
+        
+      </div>
+    </div>
+    <!-- HTML -->
+    <nav class="navbar desktop-navbar  navbar-expand-lg   " style="justify-content: space-between;">
+      <div class="d-flex align-items-center">
+        <a routerLink=".">
+            <img src="assets/univ_logo.png" alt="Emblem" class="me-3" style="height: 60px;" />
+        </a>
+        <div class="university_name">
+          <a routerLink="." style="text-decoration: none; color: unset;">
+            <h2 class="mb-1 text-muted">महात्मा गाँधी उद्यानिकी एवं वानिकी विश्वविद्यालय दुर्ग</h2>
+            <h2 class="mb-0 fw-bold"> Mahatma Gandhi Udyanikee Evam Vanikee Vishwavidyalaya Durg</h2>
+          </a>
+          
+        </div>
+      </div>
+  
+  
+    </nav>
+  </div>
+  
+  <!-- for desktop screen -->
+  
+  <nav class="navbar desktop-navbar navbar-bottom" *ngIf="isHomeMenu">
+    <div class="nav-container">
+      <!-- Desktop Navigation -->
+      <div class="nav-item" *ngFor="let module of modules; let i = index" (click)="toggleModule(i)"
+        (mouseenter)="showModule(i)" (mouseleave)="hideModule()" [class.active]="activeModule === i">
+        {{ module.name }}
+  
+        <div class="mega-menu" *ngIf="activeModule === i">
+          <div class="mega-menu-container">
+            <div class="section" *ngFor="let section of module.sections">
+              <h3 class="section-title">{{ section.name }}</h3>
+              <ul class="submenu">
+                <!-- <li *ngFor="let item of section.subMenuItems">
+                  <a *ngIf="!item.otherLink" [routerLink]="item.link">{{ item.name }}
+                  </a>
+                  <a *ngIf="item.otherLink" [href]="item.link" target="_blank">{{ item.name }} 
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-navbar" *ngIf="isHomeMenu">
+    <!-- Mobile Toggle Button -->
+    <div class="mobile-navbar-header">
+      <div class="brand">
+        <img src="assets/univ_logo.png" alt="Logo" class="logo">
+        <div class="brand-text">
+          <span>Mahatma Gandhi Udyanikee Evam Vanikee Vishwavidyalaya</span>
+        </div>
+      </div>
+      <button class="mobile-toggle" [class.active]="isMenuOpen" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu Container -->
+    <div class="mobile-menu" [class.active]="isMenuOpen">
+      <!-- Search Bar -->
+      <div class="mobile-search">
+        <input type="text" placeholder="Search..." aria-label="Search input">
+        <button type="submit" aria-label="Search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+  
+      <!-- Main Navigation Menu -->
+      <ul class="mobile-nav-menu">
+        <!-- Home -->
+        <li class="active">
+          <a routerLink="/">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+  
+        <!-- Dynamic Modules -->
+        <li *ngFor="let module of modules">
+          <a  class="has-submenu" [class.active]="isModuleActive(module.name)"
+            (click)="toggleModule(module.name)">
+            <i class="fa fa-folder"></i>
+            <span>{{ module.name }}</span>
+            <i class="fa fa-chevron-down submenu-icon"></i>
+          </a>
+  
+          <!-- Module Sections -->
+          <ul class="submenu" [class.active]="isModuleActive(module.name)">
+            <li *ngFor="let section of module.sections">
+              <a  class="has-submenu" [class.active]="isSectionActive(module.name, section.name)"
+                (click)="toggleSection(module.name, section.name)">
+                <i class="fa {{ section.iconClass }}"></i>
+                <span>{{ section.name }}</span>
+                <i class="fa fa-chevron-down submenu-icon"></i>
+              </a>
+  
+              <!-- Submenu Items -->
+              <!-- <ul class="sub-submenu" [class.active]="isSectionActive(module.name, section.name)">
+                <li *ngFor="let item of section.subMenuItems">
+                  <a [routerLink]="item.link" (click)="toggleMenu()">
+                    <i class="fa {{ item.icon }}"></i>
+                    <span>{{ item.name }}</span>
+                  </a>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+        </li>
+  
+        <!-- Static Menu Items -->
+        <li>
+          <a routerLink="/contact">
+            <i class="fa fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <div class="quick-grid">
+          <a routerLink="/quick/admissions" class="quick-link">
+            <i class="fa fa-user-plus"></i>
+            <span>Admissions</span>
+          </a>
+          <a routerLink="/quick/events" class="quick-link">
+            <i class="fa fa-calendar"></i>
+            <span>Events</span>
+          </a>
+          <a routerLink="/quick/directory" class="quick-link">
+            <i class="fa fa-address-book"></i>
+            <span>Directory</span>
+          </a>
+          <a routerLink="/quick/campus-map" class="quick-link">
+            <i class="fa fa-map"></i>
+            <span>Campus Map</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  

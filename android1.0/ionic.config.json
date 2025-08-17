@@ -1,0 +1,7 @@
+{
+  "name": "Agrotamta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

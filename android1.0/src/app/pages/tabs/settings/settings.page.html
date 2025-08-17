@@ -1,0 +1,155 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title slot="start">AgroTamta</ion-title>
+    <ion-avatar slot="start" class="bg-white">
+      <!-- <img src="assets/image/logomain.png" alt="AgroTamta Logo" /> -->
+      <img src="assets/image/iconn.gif" sizes="large" alt="AgroTamta Logo"/>
+    </ion-avatar>
+    <ion-avatar slot="end">
+      <!-- <img src="assets/image/img.gif" sizes="small" [routerLink]="['/tabs/settings']"/> -->
+      <img src="assets/image/iconn.gif" sizes="large" alt="AgroTamta Logo"/>
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<!--  -->
+<ion-content  class="ion-margin">
+  <ion-card>
+    <!-- <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" /> -->
+    <!-- <img src="assets/image/tap.png" sizes="small"  /> -->
+    <ion-card-header>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            Profile Information
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <form [formGroup]="userForm" (ngSubmit)="updateProfile()">
+            <ion-item>
+              <ion-label>Name</ion-label>
+              <ion-input formControlName="userName" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Email</ion-label>
+              <ion-input formControlName="userEmail" type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>First name</ion-label>
+              <ion-input formControlName="userFirst_name" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Last namer</ion-label>
+              <ion-input formControlName="userLast_namer" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Mobile Number</ion-label>
+              <ion-input formControlName="userMobileNumber" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Address</ion-label>
+              <ion-input formControlName="userAddress" type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Pin Code</ion-label>
+              <ion-input formControlName="userPinCode" type="text"></ion-input>
+            </ion-item>
+            <!-- <ion-item>
+              <ion-label>User ID</ion-label>
+              <ion-input formControlName="userUid" type="text"></ion-input>
+            </ion-item> -->
+        
+            <!-- <ion-item *ngIf="userImage">
+              <ion-label>Profile Image</ion-label>
+              <img [src]="userImage" alt="Profile Image" width="100" />
+            </ion-item> -->
+        
+            <!-- <ion-button expand="full" type="submit">Update Profile</ion-button> -->
+          </form>
+        </ion-card-content>
+        
+        
+        
+      </ion-card>
+      
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more,
+      nothing less.
+    </ion-card-content>
+    
+  </ion-card>
+  <!--  -->
+
+
+
+  <!--  -->
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-activatable ripple-parent circle">
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+
+      </ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+<!--  -->
+
+<!-- <b>Column 1 has <code>size</code> set to <code>"auto"</code></b>
+<ion-grid>
+  <ion-row>
+    <ion-col size="auto">1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col>3</ion-col>
+  </ion-row>
+</ion-grid>
+
+<b>Column 3 contains an input and has <code>size</code> set to <code>"auto"</code></b>
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col size="auto">
+      <ion-input placeholder="3"></ion-input>
+    </ion-col>
+    <ion-col>4</ion-col>
+    <ion-col>5</ion-col>
+    <ion-col>6</ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- <b>Column 2 has <code>size</code> set to <code>"auto"</code> and a defined width</b>
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col size="auto">
+      <div style="width: 150px">2</div>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+<!--  -->
+<!-- </ion-content> -->

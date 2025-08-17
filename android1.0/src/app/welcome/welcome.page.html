@@ -1,0 +1,59 @@
+<ion-header color="--ion-color-primary-contrast">
+  <ion-header translucent="true">
+    <ion-toolbar color="">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button> 
+      </ion-buttons>
+    
+      <ion-title class="toolbar-title">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/007/229/442/small/ears-of-wheat-whole-grains-for-making-bread-vector.jpg"
+             alt="AgroTamta Logo"
+             class="logo-img" />
+        <span class="logo-text">AgroTamta</span>
+      </ion-title>
+    
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-header>
+  
+</ion-header>
+<ion-content [fullscreen]="true" color="primary" class="mb-5">
+  <div class="profile-card-container">
+    <ion-card class="profile-card border ">
+      <ion-card-header >
+        <ion-avatar class="avatar-center">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQHoFSm3AUa3sQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723656261978?e=1757548800&v=beta&t=9BhFXNXjtdVhY0nSBCT6QnusR87nWsAVjqP5zJG5-Ts" alt="Author Photo">
+        </ion-avatar>
+        <ion-card-title class="text-center mt-2 ">Ramesh Raj Dhruwe</ion-card-title>
+        <ion-card-subtitle class="text-center">Author & Developer</ion-card-subtitle>
+        <ion-card-subtitle class="text-center">Assistant Programmer at Pt. Ravishankar Shukla University Raipur</ion-card-subtitle>
+      </ion-card-header>
+
+ 
+    </ion-card>
+  </div>
+  </ion-content>
+ 
+
+
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <div class="container-fluid d-flex justify-content-center gap-2 p-1">
+        <ion-button  [routerLink]="['/tabs/home']">प्रवेश(Enter)</ion-button>
+        <!-- <button class="btn" type="button" [routerLink]="['/tabs/home']">प्रवेश(Enter)</button> -->
+        <!-- <ion-button id="open-action-sheet">Share</ion-button> -->
+        <ion-button fill="clear" [routerLink]="['/login']" class="button">Login</ion-button>
+        <ion-button  id="open-action-sheet" fill="clear" [routerLink]="['/registration']" class="button1">Ragistration</ion-button>
+        <ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+      </div>
+      
+
+    </ion-toolbar>
+  </ion-footer>
