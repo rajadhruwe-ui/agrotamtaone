@@ -17,7 +17,7 @@ export class FarmRegistrationPage {
   constructor(private http: HttpClient) {}
 
   registerFarm() {
-    this.http.post('http://127.0.0.1:8000/api/farms/', this.farm).subscribe({
+    this.http.post('http://44.202.101.167:80/api/farms/', this.farm).subscribe({
       next: (res) => {
         console.log('Farm registered:', res);
         alert('Farm registered successfully!');

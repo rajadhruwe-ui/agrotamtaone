@@ -15,18 +15,18 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "16.2.12",
+    "@angular/cdk": "16.2.14",
     "@angular/common": "16.2.12",
-    "@angular/compiler": "16.2.12",
     "@angular/core": "16.2.12",
     "@angular/forms": "16.2.12",
+    "@angular/material": "16.2.14",
     "@angular/platform-browser": "16.2.12",
     "@angular/platform-browser-dynamic": "16.2.12",
     "@angular/router": "16.2.12",
+    "@capacitor/android": "5.4.0",
     "@ionic/angular": "^7.5.0",
-    "@angular/cdk": "16.2.14",
-    "@angular/material": "16.2.14",
     "rxjs": "~7.8.0",
-    "zone.js": "~0.14.0"
+    "zone.js": "^0.13.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.16",
@@ -36,7 +36,8 @@
     "@angular-eslint/schematics": "^16.0.0",
     "@angular-eslint/template-parser": "^16.0.0",
     "@angular/cli": "^16.2.16",
-    "@angular/compiler-cli": "^16.0.0",
+    "@angular/compiler": "^16.2.12",
+    "@angular/compiler-cli": "^16.2.12",
     "@angular/language-service": "^16.0.0",
     "@capacitor/cli": "5.4.0",
     "@ionic/angular-toolkit": "^9.0.0",
